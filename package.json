@@ -1,0 +1,16 @@
+{
+  "name": "yotube-vd",
+  "version": "1.0.0",
+  "description": "A yotube video downloading app",
+  "main": "index.js",
+  "keywords": [
+    "heroku"
+  ],
+  "author": "ugo-studio",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "ytdl-core": "^4.11.1"
+  }
+}
