@@ -2,10 +2,12 @@ const express = require("express");
 const app = express();
 const ytdl = require("ytdl-core");
 
+app.use(express.json());
+
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  return res.render("index");
+  return res.json({"message": "ok"});
 });
 
 app.get("/download", async (req, res) => {
@@ -20,6 +22,6 @@ app.get("/download", async (req, res) => {
 });
 
 // OUR ROUTES WILL GO HERE
-app.listen(process.env.PORT || 3000, () => {
+app.listen(3000, () => {
   console.log("Server is running on http://localhost:3000");
 });
