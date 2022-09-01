@@ -8,7 +8,7 @@ app.use(express.json());
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  return res.render("index.ejs");
+  return res.render("./index");
 });
 
 app.get("/download", async (req, res) => {
