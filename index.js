@@ -7,7 +7,7 @@ app.use(express.json());
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  return res.json({"message": "ok"});
+  return res.render("index");
 });
 
 app.get("/download", async (req, res) => {
